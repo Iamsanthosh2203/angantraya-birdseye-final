@@ -15,8 +15,6 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 
-import attraction1 from "../assets/attraction1.png";
-
 function Andaman() {
   const [activePackage, setActivePackage] = useState(1);
   return (
@@ -287,13 +285,17 @@ function Overview({ activePackage }) {
     description =
       "Embark on a 7 Days Blissful Romantic Tour of Andaman Islands, where azure waters, sandy beaches, and historical landmarks create the perfect backdrop for a romantic escapade. This enchanting journey includes visits to Port Blair, Havelock Island, Neil Island, Ross Island, and North Bay. Experience the historical charm of Cellular Jail, indulge in water sports, and witness the natural beauty of pristine beaches. Unwind in comfortable accommodations, savor delicious meals, and create timeless memories with your loved one";
   }
-  let img = "https://images.unsplash.com/photo-1631364377744-2d0a1e5c40cf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  if (activePackage ===2){
-    img= "https://images.unsplash.com/photo-1650451846800-b384c1ca0b25?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  } else if (activePackage === 3){
-    img="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  } else if (activePackage === 4){
-    img="https://images.unsplash.com/photo-1591260861580-e6dacfb30cb1?q=80&w=1799&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  let img =
+    "https://images.unsplash.com/photo-1631364377744-2d0a1e5c40cf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  if (activePackage === 2) {
+    img =
+      "https://images.unsplash.com/photo-1650451846800-b384c1ca0b25?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  } else if (activePackage === 3) {
+    img =
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  } else if (activePackage === 4) {
+    img =
+      "https://images.unsplash.com/photo-1591260861580-e6dacfb30cb1?q=80&w=1799&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   }
   return (
     <section

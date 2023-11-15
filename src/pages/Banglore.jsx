@@ -15,8 +15,6 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 
-import attraction1 from "../assets/attraction1.png";
-
 function BangloreAbout() {
   const [activePackage, setActivePackage] = useState(1);
   return (
@@ -271,7 +269,7 @@ function Attractions({ activePackage }) {
   );
 }
 
-function Overview({ activePackage }) { 
+function Overview({ activePackage }) {
   let description =
     "Coorg, also known as Kodagu, is a picturesque destination with its misty valleys, coffee plantations, and a rich cultural heritage. This 2-3 day tour from Bangalore offers an opportunity to explore Coorg's natural beauty, historical sites, and unique experiences. From the mesmerizing Abbey Falls to the tranquil Dubare Elephant Camp and the intricate Tibetan architecture at Namdroling Monastery, this package is packed with diverse attractions. You'll also visit the Madikeri Fort and Museum, offering insights into Coorg's history and culture.";
 
@@ -285,13 +283,17 @@ function Overview({ activePackage }) {
     description =
       "This 4-day tour takes you through the enchanting cities of Mysore and Coorg, offering a blend of cultural exploration and natural beauty. Mysore, known as the 'City of Palaces,' boasts magnificent royal residences and gardens. Coorg, on the other hand, is renowned for its scenic landscapes, coffee plantations, and serene waterfalls. This tour package allows you to experience the best of both worlds in Karnataka, India.";
   }
-  let img = "https://images.unsplash.com/photo-1599922760936-e840fa373d8d?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  if (activePackage ===2){
-    img= "https://images.unsplash.com/photo-1579429223126-29d2f6f9c1ac?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  } else if (activePackage === 3){
-    img="https://images.unsplash.com/photo-1614870641824-759b7bdc2ebe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  } else if (activePackage === 4){
-    img="https://images.unsplash.com/flagged/photo-1592544858330-7ac10a0468e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  let img =
+    "https://images.unsplash.com/photo-1599922760936-e840fa373d8d?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  if (activePackage === 2) {
+    img =
+      "https://images.unsplash.com/photo-1579429223126-29d2f6f9c1ac?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  } else if (activePackage === 3) {
+    img =
+      "https://images.unsplash.com/photo-1614870641824-759b7bdc2ebe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  } else if (activePackage === 4) {
+    img =
+      "https://images.unsplash.com/flagged/photo-1592544858330-7ac10a0468e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   }
   return (
     <section
